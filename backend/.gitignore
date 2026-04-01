@@ -1,0 +1,9 @@
+# Environment variables
+.env
+backend/.env
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
