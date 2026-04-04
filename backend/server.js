@@ -8,7 +8,10 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "https://ai-chatbot-psi-olive.vercel.app"
+  ]
 }));
 
 app.use(express.json());
