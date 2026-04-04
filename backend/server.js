@@ -7,20 +7,20 @@ dotenv.config();
 
 const app = express();
 
-const cors = require("cors");
-
+// ✅ CORS (ONLY ONCE)
 app.use(cors({
   origin: "*"
 }));
 
 app.use(express.json());
 
-// ✅ IMPORTANT: Groq base URL
+// ✅ Groq client
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   baseURL: "https://api.groq.com/openai/v1",
 });
 
+// ✅ Route
 app.post("/chat", async (req, res) => {
   console.log("🔥 Request hit backend");
   console.log("Message:", req.body);
@@ -29,7 +29,7 @@ app.post("/chat", async (req, res) => {
 
   try {
     const completion = await client.chat.completions.create({
-     model: "llama-3.1-8b-instant", // ✅ Groq model
+      model: "llama-3.1-8b-instant",
       messages: [{ role: "user", content: message }],
     });
 
@@ -42,6 +42,9 @@ app.post("/chat", async (req, res) => {
   }
 });
 
-app.listen(5000, () => {
-  console.log("🚀 Server running on http://localhost:5000");
+// ✅ Use dynamic port (VERY IMPORTANT for Render)
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
