@@ -1,16 +1,54 @@
-# React + Vite
+# 🤖 AI Chatbot Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 A modern full-stack AI chatbot built using React, Node.js, and OpenAI API.  
+This application provides real-time intelligent responses with a clean and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
+👉 https://ai-chatbot-psi-olive.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 💬 Real-time AI-powered conversations  
+- ⚡ Fast and scalable backend  
+- 🎨 Clean and responsive UI  
+- 🌍 Cross-device compatibility  
+- 🔐 Secure API integration  
+- 📡 RESTful API architecture  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js  
+- CSS / Tailwind (if used)
+
+### Backend
+- Node.js  
+- Express.js  
+
+### API
+- OpenAI API  
+
+### Deployment
+- Vercel (Frontend)  
+- (Add backend hosting if deployed)
+
+---
+
+## 📸 Screenshots
+
+> Add your project screenshots here (UI, features, chatbot responses)
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/ai-chatbot.git
+cd ai-chatbot
